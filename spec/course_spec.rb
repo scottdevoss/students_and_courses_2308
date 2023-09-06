@@ -25,5 +25,6 @@ RSpec.describe Course do
     course.enroll(student1)
     course.enroll(student2)
     expect(course.students.class).to eq(Array)
+    expect(course.students.first.class).to eq(Student)
   end
 end
